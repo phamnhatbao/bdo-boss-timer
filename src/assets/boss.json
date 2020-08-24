@@ -1,0 +1,65 @@
+{
+  "kzarka": {
+    "name": "Kzarka",
+    "image": {
+      "big": "assets/boss/garmoth_big.png",
+      "small": "assets/boss/garmoth_small.png"
+    }
+  },
+  "karanda": {
+    "name": "Karanda",
+    "image": {
+      "big": "assets/boss/karanda_big.png",
+      "small": "assets/boss/karanda_small.png"
+    }
+  },
+  "kutum": {
+    "name": "Kutum",
+    "image": {
+      "big": "assets/boss/kutum_big.png",
+      "small": "assets/boss/kutum_small.png"
+    }
+  },
+  "nouver": {
+    "name": "Nouver",
+    "image": {
+      "big": "assets/boss/nouver_big.png",
+      "small": "assets/boss/nouver_small.png"
+    }
+  },
+  "garmoth": {
+    "name": "Garmoth",
+    "image": {
+      "big": "assets/boss/garmoth_big.png",
+      "small": "assets/boss/garmoth_small.png"
+    }
+  },
+  "quint": {
+    "name": "Quint",
+    "image": {
+      "big": "assets/boss/quint_big.png",
+      "small": "assets/boss/quint_small.png"
+    }
+  },
+  "muraka": {
+    "name": "Muraka",
+    "image": {
+      "big": "assets/boss/muraka_big.png",
+      "small": "assets/boss/muraka_small.png"
+    }
+  },
+  "vell": {
+    "name": "Vell",
+    "image": {
+      "big": "assets/boss/vell_big.png",
+      "small": "assets/boss/vell_small.png"
+    }
+  },
+  "offin": {
+    "name": "Watcher Offin Tett",
+    "image": {
+      "big": "assets/boss/offin_big.png",
+      "small": "assets/boss/offin_small.png"
+    }
+  }
+}

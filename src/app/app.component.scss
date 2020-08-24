@@ -1,0 +1,52 @@
+body {
+  background-color: transparent;
+}
+
+.stream-default-box {
+  background-color: #1c202b;
+  border-radius: 4px;
+  padding: 15px 0px;
+  max-width: 300px;
+}
+
+tr {
+  background: #1c202b
+}
+
+.table td {
+  padding: 0px 15px;
+}
+
+h5 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.stream-boss-title {
+  color: #2f81f8;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.stream-boss-timer {
+  color: #26c97c;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.stream-branding {
+  color: #fff;
+  text-align: center;
+}
+
+.stream-link a {
+  color: #ffc107;
+}
+
+.stream-link a:hover {
+  color: #ffc107;
+  text-decoration: none;
+  opacity: .5;
+}
