@@ -16,17 +16,15 @@
     </tbody>
   </table>
   <div class="notification-box">
-    <input type="checkbox" value="1800" name="30min" id="30min" />
+    <input type="checkbox" value="1800" name="30min" id="30min" (change)="onCbTimeChange($event)" />
     <label class="text" for="30min">Nofity me before 30 min</label>
   </div>
   <div class="notification-box">
-    <input type="checkbox" value="900" name="15min" id="15min" />
+    <input type="checkbox" value="900" name="15min" id="15min" (change)="onCbTimeChange($event)" />
     <label class="text" for="15min">Nofity me before 15 min</label>
   </div>
   <div class="notification-box">
-    <input type="checkbox" value="0" name="0min" id="0min" />
+    <input type="checkbox" value="0" name="0min" id="0min" (change)="onCbTimeChange($event)" />
     <label class="text" for="0min">Nofity me at boss time</label>
   </div>
 </div>
-
-<button (click)="showNotification()">Show Notification</button>

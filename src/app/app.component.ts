@@ -13,6 +13,7 @@ import { ScheduleService } from './core/data/schedule.service';
 export class AppComponent implements OnInit, OnDestroy {
   private unsubscribeAll: Subject<any>;
   private schedule: any;
+  private alertList: Array<string> = [];
 
   title = 'boss-timer';
 
@@ -64,14 +65,23 @@ export class AppComponent implements OnInit, OnDestroy {
     this.unsubscribeAll.complete();
   }
 
-  showNotification() {
+  onCbTimeChange(event) {
+    if (event.target.checked) {
+      this.alertList.push(event.target.value);
+    } else {
+      const index = this.alertList.indexOf(event.target.value);
+      this.alertList.splice(index, 1);
+    }
+  }
+
+  private showNotification() {
     if (Notification.permission === 'granted') {
       // If it's okay let's create a notification
       const notification = new Notification('Black Desert Boss', {
         body: 'Boss Time Incomming'
       });
     } else if (Notification.permission !== 'denied') { // Otherwise, we need to ask the user for permission
-      Notification.requestPermission().then( (permission) => {
+      Notification.requestPermission().then((permission) => {
         // If the user accepts, let's create a notification
         if (permission === 'granted') {
           const notification = new Notification('Black Desert Boss', {
@@ -105,6 +115,10 @@ export class AppComponent implements OnInit, OnDestroy {
         if (current.isBefore(moment(tempVal)) && schedule[key].length > 0) {
           const diff = moment(tempVal).diff(current, 'seconds');
           const timeLeft = moment.duration(diff, 'seconds');
+
+          if (this.alertList.indexOf(diff.toString()) > -1) {
+            this.showNotification();
+          }
 
           return {
             countdown: {
