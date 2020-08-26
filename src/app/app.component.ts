@@ -37,7 +37,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
     this.scheduleService.getAll().subscribe(val => {
       this.schedule = val;
-    })
+    });
 
     this.unsubscribeAll = new Subject();
   }

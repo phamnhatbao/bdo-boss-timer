@@ -43,10 +43,17 @@ h5 {
 
 .stream-link a {
   color: #ffc107;
+
+  &:hover {
+    text-decoration: none;
+    opacity: .5;
+  }
 }
 
-.stream-link a:hover {
-  color: #ffc107;
-  text-decoration: none;
-  opacity: .5;
+.notification-box {
+  margin: 8px 16px;
+
+  .text {
+    color: #FFF;
+  }
 }
